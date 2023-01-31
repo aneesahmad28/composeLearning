@@ -33,7 +33,7 @@ fun BottomNavigationBar(
 
     ) {
         BottomNavigation(
-            modifier = Modifier.background(Color.Magenta, RoundedCornerShape(24.dp)),
+            modifier = Modifier.background(Color.Magenta, RoundedCornerShape(20.dp)),
         ) {
 
             items.forEach { item ->
