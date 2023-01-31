@@ -22,6 +22,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
@@ -183,7 +184,7 @@ fun profileBioText() {
         )
     }
 }
-
+@Preview
 @Composable
 fun profileActionButtons() {
     Row(
@@ -228,6 +229,7 @@ fun Profile() {
 
 }
 
+@Preview
 @Composable
 fun profileTabs() {
     var selectedTab by remember { mutableStateOf(-1) }
@@ -283,7 +285,7 @@ fun InstagramPostGrid() {
         }
     }
 }
-
+@Preview
 @Composable
 fun StoriesHighlights() {
     Row(
@@ -331,7 +333,6 @@ fun CounterLabelsText(text: String, modifier: Modifier = Modifier) {
         modifier = modifier
     )
 }
-
 @Composable
 fun CounterValueText(text: String, modifier: Modifier = Modifier) {
     Text(

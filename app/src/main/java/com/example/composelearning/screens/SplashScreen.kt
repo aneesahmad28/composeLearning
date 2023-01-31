@@ -9,6 +9,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import com.airbnb.lottie.compose.*
+import com.example.composelearning.navigation.Screens
 
 @Composable
 fun SplashScreen(navController: NavHostController) {

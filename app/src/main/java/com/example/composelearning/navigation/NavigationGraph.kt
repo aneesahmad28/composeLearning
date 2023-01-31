@@ -11,8 +11,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-
-class NavigationGraph
+import com.example.composelearning.navigation.Screens
+import com.example.composelearning.screens.ToDoList
 
 @Composable
 fun setNavigationGraph(navigationController: NavHostController)
@@ -52,10 +52,13 @@ fun setNavigationGraph(navigationController: NavHostController)
             ListViewScreen(navHostController = navigationController)
         }
         composable(route = Screens.ConstraintLayout.route){
-            ConstraintLayout(navHostController = navigationController)
+            ConstraintLayout()
         }
         composable(route = Screens.InstagramProfile.route){
             InstagramProfile(navHostController = navigationController)
+        }
+        composable(route = Screens.ToDoList.route) {
+            ToDoList(navHostController = navigationController)
         }
 
     }

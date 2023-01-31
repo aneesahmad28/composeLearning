@@ -13,13 +13,13 @@ import androidx.constraintlayout.compose.Dimension
 import androidx.navigation.NavHostController
 
 @Composable
-fun ConstraintLayout (navHostController: NavHostController){
+fun ConstraintLayout (){
 
-    scaffoldWithTopBar(navController = navHostController)
+    scaffoldWithTopBar()
 }
 
 @Composable
-fun scaffoldWithTopBar(navController: NavHostController)
+fun scaffoldWithTopBar()
 {
     val constraints = ConstraintSet{
         val greenBox = createRefFor("green_box")

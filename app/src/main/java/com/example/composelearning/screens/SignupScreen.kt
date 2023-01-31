@@ -11,12 +11,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.modifier.modifierLocalConsumer
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.example.composelearning.components.CustomToolBar
+import com.example.composelearning.navigation.Screens
 
 @Composable
 fun SignupScreen(navController: NavHostController) {
@@ -76,6 +76,17 @@ fun ScaffoldWidthTopBar(navController: NavHostController) {
                 ) {
                     Text(
                         text = stringResource(R.string.text_instagram_profile),
+                        modifier = Modifier.padding(10.dp),
+                        color = Color.White
+                    )
+                }
+                Button(
+                    onClick = { navController.navigate(Screens.ToDoList.route) },
+                    colors = ButtonDefaults.buttonColors(backgroundColor = Color.Magenta),
+                    modifier = Modifier.padding(20.dp)
+                ) {
+                    Text(
+                        text = "Todo List",
                         modifier = Modifier.padding(10.dp),
                         color = Color.White
                     )

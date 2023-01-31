@@ -1,4 +1,4 @@
-package com.example.composelearning
+package com.example.composelearning.navigation
 
 sealed class Screens(val route: String){
     object Splash: Screens("Splash_screen")
@@ -9,4 +9,5 @@ sealed class Screens(val route: String){
     object ListView: Screens("List_view")
     object ConstraintLayout: Screens("constraint_layout")
     object InstagramProfile: Screens("Instagram_profile")
+    object ToDoList: Screens("todo_list")
 }
