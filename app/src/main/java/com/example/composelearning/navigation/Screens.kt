@@ -10,4 +10,5 @@ sealed class Screens(val route: String){
     object ConstraintLayout: Screens("constraint_layout")
     object InstagramProfile: Screens("Instagram_profile")
     object ToDoList: Screens("todo_list")
+    object RandomUsers: Screens("random_users")
 }

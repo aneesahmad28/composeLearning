@@ -11,13 +11,100 @@ import androidx.compose.ui.graphics.Color
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.example.composelearning.data.RandomUserData
 import com.example.composelearning.navigation.Screens
+import com.example.composelearning.screens.RandomUsers
 import com.example.composelearning.screens.ToDoList
 
 @Composable
-fun setNavigationGraph(navigationController: NavHostController)
-{
-    NavHost(navController = navigationController, startDestination = Screens.Splash.route )
+fun setNavigationGraph(navigationController: NavHostController) {
+    val dummyUsers = listOf(
+        RandomUserData(
+            "John Doe",
+            1,
+            "0300 7386799",
+            "john.doe@example.com",
+            "https://dummyimage.com/200x200/000/fff"
+        ),
+        RandomUserData(
+            "Jane Smith",
+            2,
+            "0300 7285789",
+            "jane.smith@example.com",
+            "https://dummyimage.com/200x200/000/fff"
+        ),
+        RandomUserData(
+            "Bob Johnson",
+            3,
+            "0300 728479",
+            "bob.johnson@example.com",
+            "https://dummyimage.com/200x200/000/fff"
+        ),
+        RandomUserData(
+            "John Doe",
+            1,
+            "0300 7386799",
+            "john.doe@example.com",
+            "https://dummyimage.com/200x200/000/fff"
+        ),
+        RandomUserData(
+            "Jane Smith",
+            2,
+            "0300 7285789",
+            "jane.smith@example.com",
+            "https://dummyimage.com/200x200/000/fff"
+        ),
+        RandomUserData(
+            "Bob Johnson",
+            3,
+            "0300 728479",
+            "bob.johnson@example.com",
+            "https://dummyimage.com/200x200/000/fff"
+        ),
+        RandomUserData(
+            "John Doe",
+            1,
+            "0300 7386799",
+            "john.doe@example.com",
+            "https://dummyimage.com/200x200/000/fff"
+        ),
+        RandomUserData(
+            "Jane Smith",
+            2,
+            "0300 7285789",
+            "jane.smith@example.com",
+            "https://dummyimage.com/200x200/000/fff"
+        ),
+        RandomUserData(
+            "Bob Johnson",
+            3,
+            "0300 728479",
+            "bob.johnson@example.com",
+            "https://dummyimage.com/200x200/000/fff"
+        ),
+        RandomUserData(
+            "John Doe",
+            1,
+            "0300 7386799",
+            "john.doe@example.com",
+            "https://dummyimage.com/200x200/000/fff"
+        ),
+        RandomUserData(
+            "Jane Smith",
+            2,
+            "0300 7285789",
+            "jane.smith@example.com",
+            "https://dummyimage.com/200x200/000/fff"
+        ),
+        RandomUserData(
+            "Bob Johnson",
+            3,
+            "0300 728479",
+            "bob.johnson@example.com",
+            "https://dummyimage.com/200x200/000/fff"
+        )
+    )
+    NavHost(navController = navigationController, startDestination = Screens.Splash.route)
     {
         composable(route = Screens.Splash.route)
         {
@@ -48,17 +135,20 @@ fun setNavigationGraph(navigationController: NavHostController)
         composable(route = Screens.ForgotPassword.route){
         ForgotPasswordScreen(navHostController = navigationController)
         }
-        composable(route = Screens.ListView.route){
+        composable(route = Screens.ListView.route) {
             ListViewScreen(navHostController = navigationController)
         }
-        composable(route = Screens.ConstraintLayout.route){
+        composable(route = Screens.ConstraintLayout.route) {
             ConstraintLayout()
         }
-        composable(route = Screens.InstagramProfile.route){
+        composable(route = Screens.InstagramProfile.route) {
             InstagramProfile(navHostController = navigationController)
         }
         composable(route = Screens.ToDoList.route) {
             ToDoList(navHostController = navigationController)
+        }
+        composable(route = Screens.RandomUsers.route) {
+            RandomUsers(navHostController = navigationController, dummyUsers)
         }
 
     }

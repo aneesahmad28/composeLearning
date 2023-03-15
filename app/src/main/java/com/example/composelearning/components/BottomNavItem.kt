@@ -2,7 +2,10 @@ package com.example.composelearning.components
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.*
+import androidx.compose.material.BottomNavigation
+import androidx.compose.material.BottomNavigationItem
+import androidx.compose.material.Icon
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -25,34 +28,28 @@ data class BottomNavItem(
 fun BottomNavigationBar(
     items: List<BottomNavItem>,
     navHostController: NavHostController,
-    modifier: Modifier = Modifier,
     onItemClick: (BottomNavItem) -> Unit
 ) {
     val backStackEntry = navHostController.currentBackStackEntryAsState()
-    BottomAppBar(
-
+    BottomNavigation(
+//        modifier = Modifier.background(Color.Magenta, RoundedCornerShape(24.dp)),
     ) {
-        BottomNavigation(
-            modifier = Modifier.background(Color.Magenta, RoundedCornerShape(20.dp)),
-        ) {
 
-            items.forEach { item ->
-                var selected = item.route == backStackEntry.value?.destination?.route
-                BottomNavigationItem(
-                    selected = selected,
-                    onClick = {onItemClick(item)},
-                    selectedContentColor = Color(0xFFFFFFFF),
-                    unselectedContentColor = Color(0x88FFFFFF),
-                    icon = {
-                        Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                            Icon(imageVector = item.icon , contentDescription = item.name)
-                            Text(text = item.name, textAlign = TextAlign.Center, fontSize = 10.sp)
-                        }
+        items.forEach { item ->
+            var selected = item.route == backStackEntry.value?.destination?.route
+            BottomNavigationItem(
+                selected = selected,
+                onClick = {onItemClick(item)},
+                selectedContentColor = Color(0xFFFFFFFF),
+                unselectedContentColor = Color(0x88FFFFFF),
+                icon = {
+                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                        Icon(imageVector = item.icon , contentDescription = item.name)
+                        Text(text = item.name, textAlign = TextAlign.Center, fontSize = 10.sp)
                     }
+                }
 
-                )
-            }
+            )
         }
     }
-
 }

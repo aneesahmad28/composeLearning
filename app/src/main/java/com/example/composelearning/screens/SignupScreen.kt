@@ -81,12 +81,12 @@ fun ScaffoldWidthTopBar(navController: NavHostController) {
                     )
                 }
                 Button(
-                    onClick = { navController.navigate(Screens.ToDoList.route) },
+                    onClick = { navController.navigate(Screens.RandomUsers.route) },
                     colors = ButtonDefaults.buttonColors(backgroundColor = Color.Magenta),
                     modifier = Modifier.padding(20.dp)
                 ) {
                     Text(
-                        text = "Todo List",
+                        text = "Random users",
                         modifier = Modifier.padding(10.dp),
                         color = Color.White
                     )

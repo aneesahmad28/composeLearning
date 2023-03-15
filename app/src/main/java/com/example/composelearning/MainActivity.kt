@@ -12,6 +12,7 @@ import androidx.compose.material.Scaffold
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountBox
 import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
@@ -91,13 +92,17 @@ fun BottomBar(navController: NavHostController) {
                         icon = Icons.Filled.Home
                     ),
                     BottomNavItem(
+                        name = "Users",
+                        route = Screens.RandomUsers.route,
+                        icon = Icons.Filled.Person
+                    ),
+                    BottomNavItem(
                         name = "Instagram",
                         route = Screens.InstagramProfile.route,
                         icon = Icons.Filled.AccountBox
                     )
 
                 ),
-                modifier = Modifier.background(Color.Magenta, RoundedCornerShape(20.dp)),
                 navHostController = navController,
                 onItemClick = {
                     navController.navigate(it.route)

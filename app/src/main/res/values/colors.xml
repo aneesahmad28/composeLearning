@@ -7,4 +7,163 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">@color/thm_red</color><!--#ff2d55-->
+    <color name="colorPrimaryDark">@color/thm_grey</color>
+    <color name="colorAccent">@color/thm_blue</color>
+
+
+    <color name="textColorPrimaryDark">#37474f</color>
+
+    <!-- General Colors -->
+    <color name="gray">#7c7c7c</color>
+    <color name="navy">#135999</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- App Colors -->
+    <color name="thm_card_light">#fafafa</color>
+    <color name="thm_text_hint">#465861</color>
+    <color name="thm_shadow">#57525200</color>
+
+    <color name="thm_red">#ff2d55</color>
+    <color name="thm_blue">#007aff</color>
+    <color name="thm_grey">#E6E7E8</color>
+
+    <color name="thm_txv_gray">#213060</color>
+    <color name="thm_orange">#E07B25</color>
+    <color name="thm_deep_green">#00C435</color>
+    <color name="thm_deep_gray">#817E7B</color>
+    <color name="thm_deep_orange">#E0802F</color>
+
+    <color name="thm_purple">#7A76E9</color>
+    <color name="thm_gray_bg">#FBFBFC</color>
+    <color name="thm_light_gray">#687784</color>
+    <color name="thm_dark_navy">#004390</color>
+    <color name="thm_navy">#43425D</color>
+    <color name="thm_light_yellow">#E7EF0C</color>
+    <color name="thm_red_dark">#E80F1F</color>
+    <color name="thm_navy_light">#4D4F5C</color>
+    <color name="thm_gray_stoke_border">#E9E9F0</color>
+    <color name="thm_gray_stoke_border1">#D5D5D5</color>
+    <color name="thm_light_navy_blue">#3F638F</color>
+    <color name="thm_light_blue_drawer">#4C7BB1</color>
+    <color name="thm_lightest_blue">#71C9FF</color>
+    <color name="thm_dialog_txv">#7F7F7F</color>
+    <color name="thm_line">#A3A0A0</color>
+
+
+    <color name="black1">#BF000000</color>
+    <color name="thm_dark_navy1">#80004390</color>
+
+    <color name="thm_risk_level">#131C24</color>
+
+    <color name="thm_graph_point1">#3FA5D3</color>
+    <color name="thm_graph_point2">#5295CA</color>
+    <color name="thm_graph_point3">#5160B3</color>
+
+    <color name="pie_chart_point1">#29D3E1</color>
+    <color name="pie_chart_point2">#01244C</color>
+    <color name="pie_chart_point3">#7672E2</color>
+
+    <!--    region new design colors-->
+    <color name="color_app_background">#F5F5F5</color>
+    <color name="color_text_field_outlined_box_stroke">#243656</color>
+    <color name="color_bottom_nav_bar_to_stroke">#F5F5F5</color>
+    <color name="color_text_field_text_hint_color">#243656</color>
+    <color name="color_small_text_splash">#999999</color>
+    <color name="color_large_text_splash">#000000</color>
+    <color name="color_swipe_text_splash">#999999</color>
+    <color name="color_welcome_text_login">#213060</color>
+    <color name="color_forgot_password_text_login">#124DA5</color>
+    <color name="color_hint_text_edt">#213060</color>
+    <color name="color_bg_edt">#F5F7FA</color>
+    <color name="color_text_btn_login">#FFFFFF</color>
+    <color name="color_text_having_trouble">#909AAA</color>
+    <color name="color_thumb_switch_lang">#213060</color>
+    <color name="color_track_switch_lang">#FFFFFF</color>
+    <color name="color_welcome_text_home_page">#213060</color>
+    <color name="color_divider_view">#7090B0</color>
+    <color name="color_text_btn_resend_opt">#124DA5</color>
+    <color name="color_bottom_navigation_bar_bg">#FFFFFF</color>
+    <color name="color_menu_item_text">#243656</color>
+    <color name="color_menu_item_bg">#EEEEEE</color>
+    <color name="color_portfolio_card_view_bg">#FFFFFF</color>
+    <color name="color_portfolio_total_amount_text">#999999</color>
+    <color name="color_portfolio_total_amount_value">#25265E</color>
+    <color name="color_help_and_support_questions_text">#243656</color>
+    <color name="color_help_and_support_answers_text">#243656</color>
+    <color name="color_help_and_support_see_all_text">#124DA5</color>
+    <color name="color_help_and_support_faqs_outlined_box_stroke">#EEEEEE</color>
+    <color name="color_withdrawal_amount">#25265E</color>
+    <color name="color_withdrawal_request_item_selected_background">#E9EDF7</color>
+    <color name="color_notifications_tab_background">#F5F7FA</color>
+    <color name="color_notifications_tab_indicator">#FFFFFF</color>
+    <color name="color_notifications_tab_text_selected">#213060</color>
+    <color name="color_notifications_tab_text">#213060</color>
+    <color name="color_courses_tab_text">#34353A</color>
+    <color name="color_thumb_seek_bar_calculator">#213060</color>
+    <color name="color_thumb_stroke_seek_bar_calculator">#FFFFFF</color>
+    <color name="color_progress_seek_bar_calculator">#213060</color>
+    <color name="color_line_chart_background_calculator">#F5F7FA</color>
+    <color name="color_survey_previous_button">#D9D9D9</color>
+    <color name="color_survey_next_button">#213060</color>
+    <color name="color_fund_selection_chart_asset_item_text">#1C1E27</color>
+    <color name="color_fund_selection_chart_portfolio_specific_titles">#8E8E93</color>
+    <color name="color_portfolio_specific_bg">#FFFFFF</color>
+    <color name="color_text_low_risk">#549599</color>
+    <color name="color_text_medium_risk">#FF9E4D</color>
+    <color name="color_text_high_risk">#FA7D7D</color>
+    <color name="color_graph_accumulative_return">#CFE4F4</color>
+    <color name="color_graph_vested_amount">#47628B</color>
+    <color name="color_graph_total_contribution">#19428A</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#50243656</color>
+
+    <color name="color_request_status_under_process">#FFB039</color>
+    <color name="color_request_status_accepted">#00A330</color>
+    <color name="color_request_status_rejected">#FA7D7D</color>
+    <color name="color_request_status_pending">#FFB039</color>
+
+    <color name="color_risk_survey_previous_button_text">#484848</color>
+    <color name="color_risk_survey_next_button_text">#FFFFFF</color>
+    <color name="color_text_current_earning">#213060</color>
+
+    <color name="color_help_and_support_faqs_background">#00000000</color>
+
+    <color name="color_text_selected_menu_item">#243656</color>
+    <color name="color_text_un_selected_menu_item">#50243656</color>
+    <color name="color_background_selected_menu_item">#FFFFFF</color>
+    <color name="color_background_un_selected_menu_item">#EEEEEE</color>
+
+    <color name="color_background_bottom_navigation_bar_selected_item">#F5F7FA</color>
+    <color name="color_pin_view_background">#F5F7FA</color>
+    <color name="color_otp_digit">#124DA5</color>
+    <color name="color_risk_level_selected">#213060</color>
+    <color name="color_risk_level_un_selected">#80213060</color>
+    <color name="color_no_data_text">#25265E</color>
+    <color name="color_card_social_icons">#FFFFFF</color>
+    <color name="color_web_icon_tint">#213060</color>
+    <color name="color_seek_bar_background">#D5D5D5</color>
+    <color name="color_date_picker_dialogue">#213060</color>
+    <color name="color_portfolio_break_down_item_background_color">#FFFFFF</color>
+    <color name="color_portfolio_breakdown_background">#FFFFFF</color>
+    <color name="color_portfolio_break_down_labels">#747684</color>
+    <color name="color_portfolio_breakdown_item_background">#0A7090B0</color>
+    <color name="color_language_not_selected">#A3AED0</color>
+
+    <color name="color_academy_lesson_tilte">#34353A</color>
+    <color name="color_academy_lessons_count">#34353A</color>
+    <color name="color_academy_course_description">#5D5D61</color>
+    <color name="color_button_get_started">#79C0C2</color>
+    <color name="color_bg_search">#F5F7FA</color>
+    <color name="color_academy_course_details_fragment">#FFFFFF</color>
+    <color name="color_course_item">#FFFFFF</color>
+    <color name="color_border_filter_icon">#F5F7FA</color>
+    <color name="color_chapter_duration">#979797</color>
+    <color name="color_bg_filters_list">#00000000</color>
+    <color name="color_filter_bg">#F5F7FA</color>
+    <color name="color_filter_text">#C4C4C4</color>
+    <color name="color_course_filter_selected">#539599</color>
+    <color name="color_lesson_selected">#ff000000</color>
+    <color name="color_lesson_not_selected">#C4C4C4</color>
+    <color name="color_academy_background_back_button">#82BBBF</color>
 </resources>
